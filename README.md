@@ -94,13 +94,13 @@
 
 4. Cấu hình kết nối (Client và Server)
 Trong App.config của cả hai project:
-  ```
-  <connectionStrings>
-    <add name="UserDb"
-         connectionString="Server=TENMAYCUABAN;Database=QUANLYNGUOIDUNG;Trusted_Connection=True;User Id=sa;Password=matkhau;"
-         providerName="System.Data.SqlClient" />
-  </connectionStrings>
-  ```
+    ```
+    <connectionStrings>
+      <add name="UserDb"
+           connectionString="Server=TENMAYCUABAN;Database=QUANLYNGUOIDUNG;Trusted_Connection=True;User Id=sa;Password=matkhau;"
+           providerName="System.Data.SqlClient" />
+    </connectionStrings>
+    ```
 
 ⚠️ Lưu ý: Thay TENMAYCUABAN, User Id, Password theo cấu hình SQL Server cá nhân.
 
