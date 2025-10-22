@@ -1,0 +1,10 @@
+D:\LTM\BTVN_Week_5\QuanLyNguoiDungApp_TCP\QuanLyServer\QuanLyServer\bin\Debug\QuanLyServer.exe
+D:\LTM\BTVN_Week_5\QuanLyNguoiDungApp_TCP\QuanLyServer\QuanLyServer\bin\Debug\Newtonsoft.Json.dll
+D:\LTM\BTVN_Week_5\QuanLyNguoiDungApp_TCP\QuanLyServer\QuanLyServer\bin\Debug\QuanLyServer.exe.config
+D:\LTM\BTVN_Week_5\QuanLyNguoiDungApp_TCP\QuanLyServer\QuanLyServer\bin\Debug\QuanLyServer.pdb
+D:\LTM\BTVN_Week_5\QuanLyNguoiDungApp_TCP\QuanLyServer\QuanLyServer\bin\Debug\Newtonsoft.Json.xml
+D:\LTM\BTVN_Week_5\QuanLyNguoiDungApp_TCP\QuanLyServer\QuanLyServer\obj\Debug\QuanLyServer.csproj.AssemblyReference.cache
+D:\LTM\BTVN_Week_5\QuanLyNguoiDungApp_TCP\QuanLyServer\QuanLyServer\obj\Debug\QuanLyServer.csproj.CoreCompileInputs.cache
+D:\LTM\BTVN_Week_5\QuanLyNguoiDungApp_TCP\QuanLyServer\QuanLyServer\obj\Debug\QuanLySe.7A7EFC84.Up2Date
+D:\LTM\BTVN_Week_5\QuanLyNguoiDungApp_TCP\QuanLyServer\QuanLyServer\obj\Debug\QuanLyServer.exe
+D:\LTM\BTVN_Week_5\QuanLyNguoiDungApp_TCP\QuanLyServer\QuanLyServer\obj\Debug\QuanLyServer.pdb
