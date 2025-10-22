@@ -11,7 +11,6 @@
 2. 23520837 - Trương Tùng Lâm
 3. 23521269 - Quách Trọng Hải Quân
 4. 24520759 - Nguyễn Nhan Quốc Khang
-1. Mục tiêu & Yêu cầu kỹ thuật
 
 ## 🎯 Mục tiêu & Yêu cầu kỹ thuật
 
@@ -45,9 +44,9 @@
 - Mỗi khi có client kết nối mới → tạo luồng riêng để xử lý.
 
 - Quản lý token trong bộ nhớ:
-```c#
-Dictionary<string, (string email, DateTime expires)>
-```
+  ```c#
+  Dictionary<string, (string email, DateTime expires)>
+  ```
 - Cung cấp các API TCP:
 
   - register – Đăng ký tài khoản mới.
@@ -75,7 +74,7 @@ Dictionary<string, (string email, DateTime expires)>
 ## 🔧 Hướng dẫn cài đặt
 
 1. Cài đặt **SQL Server** và **SQL Server Management Studio (SSMS)**.
-2. Cài đặt **Visual Studio" phiên bản 2016 trở về sau.  
+2. Cài đặt **Visual Studio** phiên bản 2016 trở về sau.  
 3. Tạo database:
    ```sql
    CREATE DATABASE QUANLYNGUOIDUNG;
@@ -95,13 +94,13 @@ Dictionary<string, (string email, DateTime expires)>
 
 4. Cấu hình kết nối (Client và Server)
 Trong App.config của cả hai project:
-```
-<connectionStrings>
-  <add name="UserDb"
-       connectionString="Server=TENMAYCUABAN;Database=QUANLYNGUOIDUNG;Trusted_Connection=True;User Id=sa;Password=matkhau;"
-       providerName="System.Data.SqlClient" />
-</connectionStrings>
-```
+  ```
+  <connectionStrings>
+    <add name="UserDb"
+         connectionString="Server=TENMAYCUABAN;Database=QUANLYNGUOIDUNG;Trusted_Connection=True;User Id=sa;Password=matkhau;"
+         providerName="System.Data.SqlClient" />
+  </connectionStrings>
+  ```
 
 ⚠️ Lưu ý: Thay TENMAYCUABAN, User Id, Password theo cấu hình SQL Server cá nhân.
 
@@ -117,10 +116,10 @@ Trong App.config của cả hai project:
 - Nhấn Start hoặc Ctrl + F5
 
 - Console hiển thị:
-```cmd
-Server started on port 5050
-Waiting for clients...
-```
+  ```
+  Server started on port 5050
+  Waiting for clients...
+  ```
 
 💻 2️⃣ Chạy Client
 
