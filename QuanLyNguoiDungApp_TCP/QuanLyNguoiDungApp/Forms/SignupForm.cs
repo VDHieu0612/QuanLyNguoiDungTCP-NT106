@@ -138,7 +138,13 @@ namespace QuanLyNguoiDungApp.Forms
 
                 if (result.status == "success")
                 {
-                    MessageBox.Show((string)result.message);
+                    // Lưu token và thời gian hết hạn xuống bộ nhớ (RAM hoặc file)
+                    string token = result.token;
+                    DateTime expires = DateTime.Now.AddMinutes(1); // 1 phút để kiểm tra
+
+                    TokenManager.SaveToken(token, expires);
+
+                    MessageBox.Show("Đăng ký thành công!");
                     ProfileForm profile = new ProfileForm(email);
                     this.Hide();
                     profile.Show();

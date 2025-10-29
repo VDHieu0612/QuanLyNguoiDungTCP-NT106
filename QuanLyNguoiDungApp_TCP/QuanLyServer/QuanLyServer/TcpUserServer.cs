@@ -161,10 +161,20 @@ namespace QuanLyServer
                     cmd.Parameters.AddWithValue("@p", passwordHash);
                     cmd.Parameters.AddWithValue("@ngay", ngaySinh);
                     cmd.ExecuteNonQuery();
+                    // Sinh token ngẫu nhiên, hiệu lực 1 phút
+                    string token = Guid.NewGuid().ToString("N");
+                    DateTime expires = DateTime.Now.AddMinutes(1);
+                    activeTokens[token] = (email, expires);
+
+                    return JsonConvert.SerializeObject(new
+                    {
+                        status = "success",
+                        message = "Đăng ký thành công!",
+                        token,
+                        expires = expires.ToString("yyyy-MM-dd HH:mm:ss")
+                    });
                 }
             }
-
-            return JsonConvert.SerializeObject(new { status = "success", message = "Đăng ký thành công!" });
         }
 
         private static string HandleGetInfo(Dictionary<string, string> req, SqlConnection sqlConnection)

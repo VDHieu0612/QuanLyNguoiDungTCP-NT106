@@ -55,7 +55,11 @@ namespace QuanLyNguoiDungApp.Helpers
                 { "passwordHash", passwordHash },
                 { "ngaySinh", ngaySinh.ToString("yyyy-MM-dd") }
             };
-            return SendRequest(req);
+            string resp = SendRequest(req);
+            dynamic result = JsonConvert.DeserializeObject(resp);
+            if (result.status == "success")
+                Token = result.token;
+            return resp;
         }
 
         public static string GetUserInfo(string email)
